@@ -2,7 +2,7 @@ const express = require('express');
 const data = require("./data")
 const app = express();
 
-
+app.use(cors());
  app.get("/api/data",(req,res)=>{
   res.status(200).send(data)
  })
